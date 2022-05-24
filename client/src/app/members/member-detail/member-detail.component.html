@@ -1,1 +1,24 @@
-<p>member-detail works!</p>
+<div class="row" *ngIf="member">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <strong>ID:</strong>
+                    <p>{{user.id}}</p>
+                </div>
+                <div>
+                    <strong>E-Mail:</strong>
+                    <p>{{member.email}}</p>
+                </div>
+                <div>
+                    <strong>User Name:</strong>
+                    <p>{{member.userName}}</p>
+                </div>
+                <div>
+                    <strong>Role:</strong>
+                    <p>{{member.role}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
